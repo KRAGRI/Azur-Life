@@ -36,11 +36,11 @@ export function language() {
   // Вешаем обработчики на каждую кнопку
   langButtons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
-      if (!event.target.classList.contains("header__btn_active")) {
+      if (!event.target.classList.contains("header__btn-active")) {
         currentLang = event.target.dataset.btn;
         localStorage.setItem("language", event.target.dataset.btn);
-        resetActiveClass(langButtons, "header__btn_active");
-        btn.classList.add("header__btn_active");
+        resetActiveClass(langButtons, "header__btn-active");
+        btn.classList.add("header__btn-active");
         changeLang();
       }
     });
@@ -59,28 +59,28 @@ export function language() {
       case "en":
         document
           .querySelector('[data-btn="en"]')
-          .classList.add("header__btn_active");
+          .classList.add("header__btn-active");
         break;
       case "fr":
         document
           .querySelector('[data-btn="fr"]')
-          .classList.add("header__btn_active");
+          .classList.add("header__btn-active");
         break;
       case "ru":
         document
           .querySelector('[data-btn="ru"]')
-          .classList.add("header__btn_active");
+          .classList.add("header__btn-active");
         break;
       case "it":
         document
           .querySelector('[data-btn="it"]')
-          .classList.add("header__btn_active");
+          .classList.add("header__btn-active");
         break;
 
       default:
         document
           .querySelector('[data-btn="ru"]')
-          .classList.add("header__btn_active");
+          .classList.add("header__btn-active");
         break;
     }
   }

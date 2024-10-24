@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-lang="home_page-title"></title>
     <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/global-styles.css" />
+    <link rel="stylesheet" href="CSS/home-stales.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <button class="header__btn" data-btn="en">En</button>
-        <button class="header__btn" data-btn="fr">Fr</button>
-        <button class="header__btn" data-btn="ru">Ru</button>
-        <button class="header__btn" data-btn="it">It</button>
+        <nav>
+          <div class="header__left">
+            <div>
+              <img src="SVG/logo.svg" alt="logo" />
+              <span data-lang="home_page-logo"></span>
+            </div>
+            <span class="header__line"></span>
+            <div>
+              <img src="SVG/location.svg" alt="location" />
+              <span data-lang="home_page-location"></span>
+            </div>
+            <span class="header__line"></span>
+            <div>
+              <img src="SVG/telephone.svg" alt="telephone" />
+              <span>+33 4 93 16 06 31</span>
+            </div>
+          </div>
+          <div class="header__rigth">
+            <div class="header__languages">
+              <button class="header__btn" data-btn="en">En</button>
+              <button class="header__btn" data-btn="fr">Fr</button>
+              <button class="header__btn" data-btn="ru">Ru</button>
+              <button class="header__btn" data-btn="it">It</button>
+            </div>
+            <div class="header__menu"><span></span></div>
+          </div>
+        </nav>
+        <h1
+          class="header_title header_title__home_page"
+          data-lang="home_page-header_title"
+        ></h1>
+        <p
+          class="header_text header_text__home_page"
+          data-lang="home_page-header_text"
+        ></p>
+        <div class="header__buttons">
+          <a
+            href=""
+            class="header__download"
+            data-lang="home_page-header_btn-download"
+            download
+          >
+          </a>
+          <button
+            class="btn_contact"
+            data-lang="home_page-header_btn-contact"
+          ></button>
+        </div>
       </div>
     </header>
 
