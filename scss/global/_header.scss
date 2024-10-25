@@ -1,0 +1,35 @@
+header {
+  padding-top: 43px;
+  height: 1040px;
+}
+
+.header_title {
+  font-family: var(--playfair-display);
+  font-size: 84px;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.header_text {
+  font-size: 15px;
+  line-height: 160%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.btn_contact {
+  width: 134px;
+  height: 58px;
+  background: #fff9ec;
+  border-radius: 7px;
+  font-size: 15px;
+  line-height: 160%;
+  color: #be7e00;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #be7e00;
+    color: #fff;
+  }
+}

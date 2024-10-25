@@ -1,0 +1,154 @@
+footer {
+  padding-top: 128px;
+  padding-bottom: 169px;
+  background: url(../IMAGE/footer.png);
+  background-size: cover;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+}
+.footer__form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+  }
+  input {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    opacity: 0.5;
+    width: 100%;
+    height: 24px;
+    margin-top: 29px;
+    background: transparent;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+  button {
+    color: #fff;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 30px;
+    margin-top: 37px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    align-self: flex-end;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #be7e00;
+      border-bottom: 1px solid #be7e00;
+    }
+  }
+}
+.footer__contacs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  div {
+    height: 24px;
+
+    span {
+      margin-left: 13px;
+      font-size: 15px;
+      line-height: 160%;
+    }
+
+    &:first-child {
+      img {
+        margin-left: 2px;
+      }
+    }
+    &:nth-child(3) {
+      img {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+.footer__social_network {
+  position: absolute;
+  right: 50px;
+  top: 3px;
+  width: 70px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    fill: #fff;
+    transition: all 0.3s;
+    &:hover {
+      fill: #be7e00;
+    }
+  }
+}
+.footer__rigth {
+  display: flex;
+  gap: 30px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 160%;
+}
+.footer__nav {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  h4 {
+    font-weight: 500;
+  }
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #be7e00;
+    }
+  }
+}
+.footer__region {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #bcbcbc;
+  a {
+    color: #bcbcbc;
+
+    &:hover {
+      color: #be7e00;
+    }
+  }
+}
+.footer__region_top {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  h4 {
+    font-weight: 500;
+  }
+}

@@ -27,7 +27,11 @@ export function language() {
     for (const key in currentTexts) {
       let elem = document.querySelector(`[data-lang=${key}]`);
       if (elem) {
-        elem.textContent = currentTexts[key][currentLang];
+        if (elem.getAttribute("placeholder")) {
+          elem.placeholder = currentTexts[key][currentLang];
+        } else {
+          elem.textContent = currentTexts[key][currentLang];
+        }
       }
     }
   }
