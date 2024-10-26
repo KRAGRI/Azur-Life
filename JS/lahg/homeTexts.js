@@ -126,41 +126,59 @@ export function homeTexts() {
       ru: "Политика конфиденциальности",
       it: "Informativa sulla privacy",
     },
-    "home_page-": {
+    "home_page-popup_form_title": {
       en: "",
       fr: "",
-      ru: "",
+      ru: "Свяжитесь с нами",
       it: "",
     },
-    "home_page-": {
+    "home_page-popup_form_text": {
       en: "",
       fr: "",
-      ru: "",
+      ru: "Мы готовы ответить на возникающие вопросы о недвижимости",
       it: "",
     },
-    "home_page-": {
+    "home_page-popup_form_name": {
+      en: "Name",
+      fr: "Nom",
+      ru: "Имя",
+      it: "Nome",
+    },
+    "home_page-popup_form_tel": {
+      en: "Telephone",
+      fr: "Téléphone",
+      ru: "Телефон",
+      it: "Telefono",
+    },
+    "home_page-popup_form_email": {
+      en: "E-mail",
+      fr: "E-mail",
+      ru: "Электронная почта",
+      it: "E-mail",
+    },
+    "home_page-popup_form_message": {
       en: "",
       fr: "",
-      ru: "",
+      ru: "Текст сообщения",
       it: "",
     },
-    "home_page-": {
+    "home_page-popup_form_checkbox": {
       en: "",
       fr: "",
-      ru: "",
+      ru: "Оставляя свой email, я принимаю политику конфиденциальности.",
       it: "",
     },
-    "home_page-": {
-      en: "",
-      fr: "",
-      ru: "",
-      it: "",
+    "home_page-popup_form_btn": {
+      en: "Send a request",
+      fr: "Envoyer une demande",
+      ru: "Отправить запрос",
+      it: "Invia richiesta",
     },
-    "home_page-": {
-      en: "",
-      fr: "",
-      ru: "",
-      it: "",
+    "home_page-popup_form_location": {
+      en: "France, 46 Boulevard Leclerc, 06310, Beaulieu-sur-Mer",
+      fr: "France, 46 Boulevard Leclerc, 06310, Beaulieu-sur-Mer",
+      ru: "Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер",
+      it: "Francia, 46 Boulevard Leclerc, 06310, Beaulieu-sur-Mer",
     },
     "home_page-": {
       en: "",

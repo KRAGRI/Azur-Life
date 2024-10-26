@@ -21,3 +21,26 @@ function menu() {
     backgroundMenu.style.display = "flex";
   }
 }
+
+const BtnPopupForms = document.querySelectorAll('[data-id="btn_contact-us"]');
+const backgroundPopupForm = document.querySelector(".popup_form");
+const freedomPopupForm = document.querySelector(".popup_form__freedom");
+BtnPopupForms.forEach((BtnPopupForm) => {
+  BtnPopupForm.addEventListener("click", popupForm);
+});
+freedomPopupForm.addEventListener("click", popupForm);
+
+function popupForm() {
+  if (backgroundPopupForm.classList.contains("popup_form-active")) {
+    backgroundPopupForm.classList.remove("popup_form-active");
+    document.body.style.overflow = "visible";
+  } else {
+    backgroundPopupForm.classList.add("popup_form-active");
+    document.body.style.overflow = "hidden";
+    if (btnMenu.classList.contains("header__menu-active")) {
+      btnMenu.classList.remove("header__menu-active");
+      headerRigth.classList.remove("header__rigth-active");
+      backgroundMenu.style.display = "none";
+    }
+  }
+}

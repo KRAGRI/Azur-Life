@@ -17,6 +17,15 @@ nav {
     height: 32px;
     background-color: #fff;
   }
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    img {
+      margin-right: 10px;
+    }
+  }
 
   div {
     display: flex;
