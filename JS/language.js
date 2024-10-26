@@ -16,7 +16,7 @@ export function language() {
         currentTexts = homeTexts();
         break;
 
-      case "/about.html":
+      case "/Azur-Life/about.html":
         currentTexts = aboutTexts();
         document.querySelector(
           '[data-lang="home_page-menu_main_link_1"]'
