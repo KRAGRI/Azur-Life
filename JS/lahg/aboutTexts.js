@@ -1,6 +1,6 @@
 export function aboutTexts() {
   const aboutTexts = {
-    "home_page-title": {
+    "about_page-title": {
       en: "Azur Life | About",
       fr: "Azur Life",
       ru: "Azur Life | О нас",
