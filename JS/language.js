@@ -1,4 +1,5 @@
 import { homeTexts } from "./lahg/homeTexts.js";
+import { aboutTexts } from "./lahg/aboutTexts.js";
 
 export function language() {
   const langButtons = document.querySelectorAll("[data-btn]");
@@ -13,6 +14,13 @@ export function language() {
     switch (currentPathName) {
       case "/index.html":
         currentTexts = homeTexts();
+        break;
+
+      case "/about.html":
+        currentTexts = aboutTexts();
+        document.querySelector(
+          '[data-lang="home_page-menu_main_link_1"]'
+        ).className = "menu__link-active";
         break;
 
       default:

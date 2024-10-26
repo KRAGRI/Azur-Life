@@ -1,0 +1,13 @@
+header {
+  background: url(../IMAGE/header-about.png);
+  background-size: cover;
+}
+
+.header_title__home_page {
+  width: 1000px;
+  margin-top: 260px;
+}
+
+.header_text__home_page {
+  width: 500px;
+}/*# sourceMappingURL=about-styles.css.map */
