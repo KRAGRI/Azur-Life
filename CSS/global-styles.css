@@ -106,11 +106,21 @@ nav {
   align-items: center;
   justify-content: flex-end;
 }
+.header__menu:hover span {
+  background-color: #be7e00;
+}
+.header__menu:hover::after {
+  background-color: #be7e00;
+}
+.header__menu:hover::before {
+  background-color: #be7e00;
+}
 .header__menu span {
   height: 2px;
   width: 100%;
   transform: scale(1);
   background-color: #faf6f2;
+  transition: all 0.3s ease 0s;
 }
 .header__menu::after {
   content: "";
