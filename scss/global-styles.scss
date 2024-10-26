@@ -12,6 +12,18 @@
   --playfair-display: "Playfair Display", sans-serif;
 }
 
+::-webkit-scrollbar {
+  background-color: #000000;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 9em;
+  &:hover {
+    background-color: #be7e00;
+  }
+}
+
 body {
   color: #ffffff;
   background-color: #151515;
@@ -26,4 +38,4 @@ body {
   margin: 0 auto;
 }
 
-@import "global/header", "global/navigetion", "global/footer";
+@import "global/menu", "global/header", "global/navigetion", "global/footer";
