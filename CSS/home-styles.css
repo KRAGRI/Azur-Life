@@ -1,6 +1,7 @@
 header {
   background: url(../IMAGE/header-home.jpeg);
   background-size: cover;
+  background-position: center;
 }
 
 .header_title__home_page {
