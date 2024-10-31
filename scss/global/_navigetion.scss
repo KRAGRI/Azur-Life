@@ -47,13 +47,18 @@ nav {
   gap: 34px;
   height: 18px;
   align-items: center;
-  z-index: 50;
 }
 
 .header__rigth-active {
   position: absolute;
   right: 125px;
   top: 48px;
+  z-index: 50;
+}
+@media (max-width: 1490px) {
+  .header__rigth-active {
+    position: static;
+  }
 }
 
 .header__menu {
@@ -141,4 +146,52 @@ nav {
 
 .header__btn-active {
   text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .header__left {
+    .header__line:nth-child(4) {
+      display: none;
+    }
+
+    div {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  .header__left {
+    .header__line:nth-child(4) {
+      display: block;
+    }
+    .header__line:nth-child(2) {
+      display: none;
+    }
+    div {
+      &:nth-child(3) {
+        display: none;
+      }
+      &:last-child {
+        display: flex;
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .header__left {
+    .header__line:nth-child(4) {
+      display: none;
+    }
+    div {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    height: 22px;
+  }
 }

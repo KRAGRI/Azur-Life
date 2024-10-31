@@ -1,5 +1,5 @@
 header {
-  background: url(../IMAGE/header-home.jpeg);
+  background: url(../IMAGE/header-home.webp);
   background-size: cover;
   background-position: center;
 }
@@ -30,4 +30,31 @@ header {
 }
 .header__download:hover {
   color: #be7e00;
+}
+
+@media (max-width: 1050px) {
+  .header_title__home_page {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .header_title__home_page {
+    margin-top: 220px;
+  }
+  .header_text__home_page {
+    width: 100%;
+    max-width: 400px;
+  }
+  .header__buttons {
+    width: auto;
+    height: 36px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 26px;
+  }
+  .header__download {
+    order: 2;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=home-styles.css.map */

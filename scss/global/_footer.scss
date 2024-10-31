@@ -1,12 +1,15 @@
 footer {
-  padding-top: 128px;
-  padding-bottom: 169px;
   background: url(../IMAGE/footer.png);
   background-size: cover;
+  background-position: center;
 }
 .footer__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(16, 16, 16, 0.6);
+  padding-top: 128px;
+  padding-bottom: 169px;
 }
 .footer__left {
   display: flex;
@@ -70,6 +73,8 @@ footer {
 
   div {
     height: 24px;
+    display: flex;
+    align-items: center;
 
     span {
       margin-left: 13px;
@@ -151,5 +156,73 @@ footer {
 
   h4 {
     font-weight: 500;
+  }
+}
+@media (max-width: 1059px) {
+  .footer__rigth {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .footer__region_top {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .footer__container {
+    justify-content: start;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 78px;
+    padding-bottom: 112px;
+  }
+  .footer__left {
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+  }
+  .footer__form {
+    width: 100%;
+    h4 {
+      font-size: 14px;
+    }
+    input {
+      font-size: 12px;
+      height: 24px;
+      margin-top: 23px;
+    }
+    button {
+      height: 25px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  }
+  .footer__contacs {
+    position: absolute;
+    top: 780px;
+    left: 0;
+    width: 100%;
+    div {
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .footer__social_network {
+    right: 0;
+    top: 0;
+  }
+  .footer__rigth {
+    font-size: 12px;
+    margin-top: 80px;
+    gap: 15px;
+    margin-bottom: 250px;
+  }
+  .footer__nav {
+    width: 100%;
+    gap: 15px;
+    h4 {
+      font-size: 14px;
+    }
   }
 }
