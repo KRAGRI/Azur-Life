@@ -3,11 +3,13 @@ footer {
   background-size: cover;
   background-position: center;
 }
+.footer__background {
+  background-color: rgba(21, 21, 21, 0.61);
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: rgba(16, 16, 16, 0.6);
   padding-top: 128px;
   padding-bottom: 169px;
 }
